@@ -108,3 +108,17 @@ form hr{
     border-style: solid;
 
 }
+
+#background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#back-btn{
+    position: absolute;
+    top: 5vh;
+    left: -6vh;
+}

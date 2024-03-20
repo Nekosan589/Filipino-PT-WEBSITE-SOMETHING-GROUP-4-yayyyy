@@ -117,7 +117,7 @@ nav{
 }
 
 .login-form p, .login-form a{
-    font-size: 13vh4rem;
+    font-size: 13vh;
     text-align: center;
     margin: 2vh;
 }
@@ -148,3 +148,44 @@ nav{
 #back-btn{
     margin: 2vh;
 }
+
+#background{
+    position: absolute;
+    top: 11vh;
+    left: 0;
+    width: 100%;
+    height: 89vh;
+    object-fit: cover;
+    z-index: -1;
+    
+}
+
+#content-card-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 34%;
+}
+
+.content-card{
+    height: 48vh;
+    width: 40vh;
+    background-color: white;
+    border-radius: 2vh;
+    margin: 4vh;
+}
+
+.content-card > img{
+    width: 40vh;
+    height: 40vh;
+    object-fit: cover;
+    border-top-left-radius: 2vh; border-top-right-radius: 2vh;
+}
+
+.content-card h1{
+    font-size: 3vh;
+    text-align: center;
+}
+
+
