@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/registration_form.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Student Registration Form</h1>
+        <p class="subtitle">Fill out the form for registration</p>
+        <hr>
+        <label>Name</label>
+        <div class="row center">
+            <input type="text" placeholder="First" name="fname" id="fname">
+            <input type="text" placeholder="Last" name="lname" id="lname">
+        </div>
+
+
+
+            <div class="row center" id="bdate-and-gender">
+                <label>Birthdate</label>
+                <label>Gender</label>
+                
+            </div>
+            <div class="row center">
+                <input type="date" name="bdate" id="bdate">
+                <select name="gender" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+
+        <label>Adress</label>
+        <input type="text" name="Address" placeholder="Address" id="address">
+
+        <label>Email</label>
+        <input type="email" placeholder="john.doe@example.com" name="email" id="email">
+
+        <label>Password</label>
+        <input type="password" name="pword" placeholder="Password" id="pword">
+
+        <label>Phone Number</label>
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="+631234567890" id="phone">
+
+        <div class="row start">
+            <input type="reset" placeholder="Clear" id="clear-btn" class="btn-default first">
+            <input type="submit" value="Submit" id="submit-btn" class="btn-default">
+        </div>
+    </form>
+
+</body>
+
+</html>

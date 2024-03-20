@@ -1,67 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Linking stylesheet/css -->
     <link rel="stylesheet" type="text/css" href="styles/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <script src="scripts/index.js"></script>
+
     <title>Registration Form</title>
 <body>
     <header>
         <h1>Dinopedia</h1>
         <nav>
-           <button class="btn-default">Register</button>
+            <a href="registration_form.html"><button class="btn-default">Register</button></a>
            <button class="btn-default" id="login-btn">Login</button>
         </nav>
     </header>
 
     <main>
         <form action="" class="login-form hide" id="login-form">
-            <button class="btn-default" id="back-btn">Back</button>
+            <button id="back-btn" class="btn-default">Back</button>
             <div id="login-container">
-                <label class="form-header">LOGIN</label>
-                <input type="text" placeholder="Email" class="default-input-text">
-                <input type="password" placeholder="Password" class="default-input-text">
-                <p>Don't have an account? <a href="#home">Register</a></p>
-                <input type="submit" class="btn-default" value="Login">
+                <h1 class="form-header">LOGIN</h1>
+                <input type="text" placeholder="Email" name="Email">
+                <input type="password" placeholder="Password" name="password">
+                <p>Don't have an account? <a href="registration_form.html">Register</a></p>
+                <div id="strip"><input type="submit" class="btn-default" value="Login"></div>
             </div>
         </form>
+
+
     </main>
 
-    <footer>
-        ...
-    </footer>
-
-    <script>
-        const loginBtn = document.getElementById("login-btn");
-        const loginForm = document.getElementById("login-form")
-        const backButton = document.getElementById("back-btn")
-        loginBtn.onclick = () =>{
-
-            if(loginForm.classList.contains("hide")){
-                loginForm.classList.remove("hide");
-                loginForm.classList.add("show");
-            } else if(loginForm.classList.contains("show")){
-                loginForm.classList.remove("show");
-                loginForm.classList.add("hide")
-            }
-        }
-
-        backButton.onclick = () => {
-            if(loginForm.classList.contains("hide")){
-                loginForm.classList.remove("hide");
-                loginForm.classList.add("show");
-            } else if(loginForm.classList.contains("show")){
-                loginForm.classList.remove("show");
-                loginForm.classList.add("hide")
-            }
-        }
-
-
-
-    </script>
+    <!-- Linking Scripts -->
+    <script src="scripts/index.js"></script>
 </body>
 </html>

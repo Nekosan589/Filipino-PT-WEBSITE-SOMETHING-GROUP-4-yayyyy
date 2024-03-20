@@ -1,0 +1,110 @@
+/* Importing locally downloaded font */
+@font-face {
+    font-family: "Abril Fatface";
+    src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format('truetype');
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Abril Fatface", serif;
+}
+
+:root{
+    --color-light-green: #B9DD9D;
+    --color-dark-green: #6EBA9C;
+    --color-baby-blue: #A0C4E6;
+    --color-yellow: #FAEEB2;
+
+}
+
+form{
+    position: absolute;
+    background-color: #D3D3D3;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vh;
+    height: 90vh;
+    border-radius: 3vh; 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    padding: 2vh 2vh;
+}
+
+form input{
+    padding: 0.5vh 1vh;
+    margin: 1vh 0vh;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+}
+
+.center{
+    justify-content: space-between;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+#bdate-and-gender label{
+    width: 48%;
+}
+
+#fname, #lname, #bdate, #gender{
+   width: 49%;
+}
+
+.btn-default{
+    font-size: 3vh;
+    margin-left: 4%;
+    background-color: var(--color-dark-green);
+    color: white;
+    border-color: var(--color-dark-green);
+    border-style: solid;
+    border-radius: 0.5vh;
+    padding: 1% 4%;
+    cursor: pointer;
+
+}
+
+.btn-default:hover{
+    opacity: 0.4;
+}
+
+.first{
+    margin-left: 0px;
+}
+
+form input, form label{
+    display: block;
+}
+
+.subtitle{
+    font-size: 2.5vh;
+    color: grey;
+}
+
+form input, form select{
+    border-color: black;
+    border-width: 0.4vh;
+    border-style: solid;
+}
+
+form select{
+    height: 6vh;
+}
+
+#phone, #email, #address, #pword{
+    width: 100%;
+}
+
+form hr{
+    border-color: black;
+    border-width: 0.05vh;
+    border-style: solid;
+
+}
