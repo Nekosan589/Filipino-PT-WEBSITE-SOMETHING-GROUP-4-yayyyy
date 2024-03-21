@@ -3,13 +3,24 @@
     font-family: "Abril Fatface";
     src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format('truetype');
 }
+@font-face{
+    font-family: "Dogica";
+    src: url("../fonts/dogica/TTF/dogica.ttf") format("truetype");
+}
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Abril Fatface", serif;
 }
+h1{
+    font-family: "Abril Fatface";
+}
+
+p, input, button, a{
+    font-family: "Dogica", "Arial";
+}
+
 
 :root{
     --color-light-green: #B9DD9D;
@@ -52,15 +63,16 @@ header h1{
 }
 
 .btn-default{
-    font-size: 3vh;
+    font-size: 2vh;
     margin-left: 4%; margin-right: 4%;
     background-color: var(--color-dark-green);
     color: white;
     border-color: var(--color-dark-green);
     border-style: solid;
     border-radius: 0.5vh;
-    padding: 1% 4%;
+    padding: 1vh 2vh;
     cursor: pointer;
+
 
 }
 
@@ -95,7 +107,7 @@ nav{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     padding-top: 3vh;padding-bottom: 3vh;
     width: 70vh;
-    transition: transform 300ms ease-in-out;
+    transition: transform 2000ms;
 }
 
 .form-header{
@@ -117,7 +129,7 @@ nav{
 }
 
 .login-form p, .login-form a{
-    font-size: 13vh;
+    font-size: 2vh;
     text-align: center;
     margin: 2vh;
 }
@@ -143,8 +155,6 @@ nav{
     width: 100%;
 }
 
-
-
 #back-btn{
     margin: 2vh;
 }
@@ -165,15 +175,16 @@ nav{
     display: flex;
     justify-content: center;
     width: 100%;
-    top: 34%;
+    top: 30%;
 }
 
 .content-card{
-    height: 48vh;
+    height: 47vh;
     width: 40vh;
     background-color: white;
     border-radius: 2vh;
     margin: 4vh;
+    transition: transform 100ms;
 }
 
 .content-card > img{
@@ -188,4 +199,22 @@ nav{
     text-align: center;
 }
 
+.content-card:hover{
+    transform: scale(1.15);
+}
 
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+#caption{
+    position: absolute;
+    top: 20vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 3vh;
+    text-align: center;
+}

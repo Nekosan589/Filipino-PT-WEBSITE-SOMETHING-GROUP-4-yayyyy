@@ -3,12 +3,28 @@
     font-family: "Abril Fatface";
     src: url("../fonts/Abril_Fatface/AbrilFatface-Regular.ttf") format('truetype');
 }
+@font-face{
+    font-family: "Dogica";
+    src: url("../fonts/dogica/TTF/dogica.ttf") format("truetype");
+}
 
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Abril Fatface", serif;
+}
+h1{
+    font-family: "Abril Fatface";
+}
+
+p, input, button, a, option, select{
+    font-family: "Dogica", "Arial";
+    font-size: 1.5vh;
+}
+
+label{
+    font-family: "Abril Fatface";
+    font-size: 3vhh;
 }
 
 :root{
@@ -84,14 +100,16 @@ form input, form label{
 }
 
 .subtitle{
-    font-size: 2.5vh;
+    font-size: 2vh;
     color: grey;
+    margin-top: 1vh;margin-bottom: 1vh;
 }
 
 form input, form select{
     border-color: black;
     border-width: 0.4vh;
     border-style: solid;
+    padding: 1vh 1vh;
 }
 
 form select{

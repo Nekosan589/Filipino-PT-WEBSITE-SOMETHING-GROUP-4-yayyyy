@@ -13,7 +13,7 @@
     <header>
         <h1>Dinopedia</h1>
         <nav>
-            <a href="registration_form.html"><button class="btn-default">Register</button></a>
+            <a href="html_pages/registration_form.html"><button class="btn-default">Register</button></a>
            <button class="btn-default" id="login-btn">Login</button>
         </nav>
     </header>
@@ -21,30 +21,32 @@
     
 
     <main>
-        <img id="background" src="assets/tree_background.jpg">
+        <img id="background" src="assets/background/tree_background.jpg">
         <form action="" class="login-form hide" id="login-form">
             <button id="back-btn" class="btn-default">Back</button>
             <div id="login-container">
                 <h1 class="form-header">LOGIN</h1>
                 <input type="text" placeholder="Email" name="Email">
                 <input type="password" placeholder="Password" name="password">
-                <p>Don't have an account? <a href="registration_form.html">Register</a></p>
+                <p>Don't have an account? <a href="html_pages/registration_form.html">Register</a></p>
                 <div id="strip"><input type="submit" class="btn-default" value="Login"></div>
             </div>
         </form>
 
+        <p id="caption">From the Abelisaurus to the Zanabazar, <br> which dinosaur would you like to learn about?</p>
+
         <div id="content-card-wrapper">
             <div class="content-card">
                 <img src="assets/cool_dino.jpg">
-                <h1>COol dino</h1>
+                <h1>Abelisaurus</h1>
+            </div>
+            <div class="content-card">
+                <img src="assets/dinos/cool_dino.jpg">
+                <h1>Awesomenosaurus</h1>
             </div>
             <div class="content-card">
                 <img src="assets/cool_dino.jpg">
-                <h1>DINOSAUR</h1>
-            </div>
-            <div class="content-card">
-                <img src="assets/cool_dino.jpg">
-                <h1>DINOSAUR</h1>
+                <h1>Zanabazar</h1>
             </div>
         </div>
     </main>
